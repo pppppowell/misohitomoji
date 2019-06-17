@@ -1,0 +1,9 @@
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+	      <p style="white-space: pre-line;"><%= link_to(post.content, "/posts/#{post.id}") %></p>
+	    </div>
+	  <% end %>
+	</div>
+ </div>
