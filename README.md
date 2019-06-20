@@ -1,28 +1,26 @@
-<<<<<<< HEAD
 # misohitomoji
 =======
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+「みそひともじ」とは
+・短歌専用SNSです
+・「誰が書いたか、という先入観を持たずに投稿作品が読める」ということを重視した作りになっています
 
-Things you may want to cover:
+テスト用ユーザー
+Email : test@mail.com
+password : test
 
-* Ruby version
+機能
+・新規登録/ログイン
+・短歌投稿
+・他ユーザーの投稿を"すき"できる
+・自分の投稿と"すき"した他ユーザーの投稿を一覧で見返すことができる
+・ユーザーネーム、アイコン等の変更
+・このサービスを利用している歌人一覧が見られる
+・他ユーザーの詳細ページの閲覧
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> first commit
+今後の機能追加予定
+・プロフィール編集機能の強化
+・下書き保存機能
+・投稿ページでの文字数表示機能
+・etc...
