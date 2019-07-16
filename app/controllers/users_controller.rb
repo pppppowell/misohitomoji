@@ -37,8 +37,12 @@ class UsersController < ApplicationController
 
   def update
     @user=User.find_by(id: params[:id])
-    @user.name=params[:name]
-    @user.email=params[:email]
+    if @user.id==5
+      @error_message="テストユーザーの情報は変更できません"
+      render("users/edit")
+    else
+      @user.email=params[:email]
+      @user.name=params[:name]
 
     if params[:image]
       @user.image_name="#{@user.id}.jpg"
@@ -51,6 +55,7 @@ class UsersController < ApplicationController
       redirect_to("/users/#{@user.id}")
     else
       render("users/edit")
+    end
     end
   end
 
