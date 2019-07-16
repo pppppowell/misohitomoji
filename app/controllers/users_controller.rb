@@ -37,10 +37,6 @@ class UsersController < ApplicationController
 
   def update
     @user=User.find_by(id: params[:id])
-    if @user.id==5
-      @error_message="テストユーザーの情報は変更できません"
-      render("users/edit")
-    else
       @user.email=params[:email]
       @user.name=params[:name]
 
@@ -56,7 +52,7 @@ class UsersController < ApplicationController
     else
       render("users/edit")
     end
-  end  
+  
   end
 
   def login_form
